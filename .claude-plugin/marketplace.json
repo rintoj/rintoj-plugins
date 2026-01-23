@@ -1,0 +1,24 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "rintoj-plugins",
+  "description": "Personal Claude Code plugins",
+  "owner": {
+    "name": "rintoj"
+  },
+  "plugins": [
+    {
+      "name": "project-forge",
+      "description": "End-to-end GitHub-based project management from idea capture to deployment",
+      "version": "1.0.0",
+      "author": {
+        "name": "rintoj"
+      },
+      "source": {
+        "source": "github",
+        "repo": "rintoj/project-forge"
+      },
+      "category": "productivity",
+      "keywords": ["project-management", "github", "planning", "sprints", "milestones"]
+    }
+  ]
+}

@@ -9,7 +9,7 @@
     {
       "name": "project-forge",
       "description": "End-to-end GitHub-based project management from idea capture to deployment",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "rintoj"
       },
@@ -18,7 +18,7 @@
         "repo": "rintoj/project-forge"
       },
       "category": "productivity",
-      "keywords": ["project-management", "github", "planning", "sprints", "milestones"]
+      "keywords": ["project-management", "github", "planning", "sprints", "milestones", "backlog", "issue-tracking"]
     }
   ]
 }

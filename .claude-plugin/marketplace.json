@@ -9,7 +9,7 @@
     {
       "name": "project-forge",
       "description": "End-to-end GitHub-based project management from idea capture to deployment",
-      "version": "1.4.0",
+      "version": "1.5.0",
       "author": {
         "name": "rintoj"
       },

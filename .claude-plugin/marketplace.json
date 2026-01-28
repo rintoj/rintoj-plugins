@@ -8,8 +8,8 @@
   "plugins": [
     {
       "name": "project-forge",
-      "description": "End-to-end GitHub-based project management from idea capture to deployment",
-      "version": "1.5.0",
+      "description": "End-to-end GitHub-based project management with feature-based vertical slices",
+      "version": "1.6.0",
       "author": {
         "name": "rintoj"
       },
@@ -18,7 +18,7 @@
         "repo": "rintoj/project-forge"
       },
       "category": "productivity",
-      "keywords": ["project-management", "github", "planning", "sprints", "milestones", "backlog", "issue-tracking", "react", "apollo-graphql", "style-guide"]
+      "keywords": ["project-management", "github", "planning", "sprints", "milestones", "backlog", "issue-tracking", "feature-generation", "vertical-slices"]
     }
   ]
 }

@@ -7,15 +7,15 @@
   },
   "plugins": [
     {
-      "name": "project-forge",
+      "name": "planr",
       "description": "End-to-end GitHub-based project management with feature-based vertical slices",
-      "version": "1.6.0",
+      "version": "2.0.0",
       "author": {
         "name": "rintoj"
       },
       "source": {
         "source": "github",
-        "repo": "rintoj/project-forge"
+        "repo": "rintoj/planr"
       },
       "category": "productivity",
       "keywords": ["project-management", "github", "planning", "sprints", "milestones", "backlog", "issue-tracking", "feature-generation", "vertical-slices"]

@@ -23,7 +23,7 @@
     {
       "name": "uix",
       "description": "Complete Figma design workflow from screen creation to developer handoff. Includes idempotent design system management, bi-directional Figma sync, component inventory, and Planr integration.",
-      "version": "1.5.1",
+      "version": "1.6.0",
       "author": {
         "name": "rintoj"
       },

@@ -37,7 +37,7 @@
     {
       "name": "bible-scribe",
       "description": "A scribe for biblical content - worship messages, Bible classes, quizzes, and study materials. Includes scripture research and Christ-centered worship message generation in Malayalam.",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "author": {
         "name": "rintoj"
       },

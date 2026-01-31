@@ -33,6 +33,20 @@
       },
       "category": "design",
       "keywords": ["figma", "design-system", "ui-design", "ux", "design-tokens", "screen-mocking", "design-validation", "figma-sync", "component-inventory", "developer-handoff", "planr-integration"]
+    },
+    {
+      "name": "bible-scribe",
+      "description": "A scribe for biblical content - worship messages, Bible classes, quizzes, and study materials. Includes scripture research and Christ-centered worship message generation in Malayalam.",
+      "version": "1.0.0",
+      "author": {
+        "name": "rintoj"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rintoj/bible-scribe.git"
+      },
+      "category": "content",
+      "keywords": ["bible", "worship", "scripture", "malayalam", "preaching", "biblical-content", "study-materials"]
     }
   ]
 }

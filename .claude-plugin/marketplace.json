@@ -9,7 +9,7 @@
     {
       "name": "planr",
       "description": "End-to-end GitHub-based project management from idea capture to deployment. Includes interactive project capture, feature generation, Figma design integration, high-level planning overview, detailed task generation with embedded API specs, implementation with vertical slices, and progress tracking via dashboard.",
-      "version": "2.6.0",
+      "version": "2.7.0",
       "author": {
         "name": "rintoj"
       },

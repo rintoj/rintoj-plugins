@@ -9,7 +9,7 @@
     {
       "name": "planr",
       "description": "End-to-end GitHub-based project management from idea capture to deployment. Includes interactive project capture, feature generation, Figma design integration, high-level planning overview, detailed task generation with embedded API specs, implementation with vertical slices, and progress tracking via dashboard.",
-      "version": "2.4.0",
+      "version": "2.5.0",
       "author": {
         "name": "rintoj"
       },
@@ -18,7 +18,7 @@
         "url": "https://github.com/rintoj/planr.git"
       },
       "category": "productivity",
-      "keywords": ["project-management", "github", "planning", "sprints", "milestones", "backlog", "issue-tracking", "feature-generation", "vertical-slices", "dashboard", "figma", "design-system", "design-tokens", "ui-implementation"]
+      "keywords": ["project-management", "github", "planning", "implementation", "agile", "backlog", "issue-tracking", "feature-generation", "vertical-slices", "dashboard", "figma", "design-system", "design-tokens", "ui-implementation", "nestjs", "backend", "api", "cli", "database", "graphql", "nextjs", "react"]
     },
     {
       "name": "uix",

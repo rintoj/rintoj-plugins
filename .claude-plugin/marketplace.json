@@ -23,7 +23,7 @@
     {
       "name": "uix",
       "description": "Complete Figma design workflow from screen creation to developer handoff. Includes screen spec generation, inline token binding, bi-directional Figma sync, component inventory, and Planr integration.",
-      "version": "1.14.0",
+      "version": "1.14.1",
       "author": {
         "name": "rintoj"
       },

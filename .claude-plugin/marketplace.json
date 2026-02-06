@@ -15,7 +15,7 @@
       },
       "source": {
         "source": "url",
-        "url": "https://github.com/rintoj/planr.git"
+        "url": "git@github.com:rintoj/planr.git"
       },
       "category": "productivity",
       "keywords": ["project-management", "github", "planning", "implementation", "agile", "backlog", "issue-tracking", "feature-generation", "vertical-slices", "dashboard", "figma", "design-system", "design-tokens", "ui-implementation", "nestjs", "backend", "api", "cli", "database", "graphql", "nextjs", "react"]
@@ -29,7 +29,7 @@
       },
       "source": {
         "source": "url",
-        "url": "https://github.com/rintoj/uix-plugin.git"
+        "url": "git@github.com:rintoj/uix-plugin.git"
       },
       "category": "design",
       "keywords": ["figma", "design-system", "ui-design", "ux", "design-tokens", "screen-specs", "screen-mocking", "design-validation", "figma-sync", "component-inventory", "developer-handoff", "planr-integration"]
@@ -43,7 +43,7 @@
       },
       "source": {
         "source": "url",
-        "url": "https://github.com/rintoj/bible-scribe.git"
+        "url": "git@github.com:rintoj/bible-scribe.git"
       },
       "category": "content",
       "keywords": ["bible", "worship", "scripture", "malayalam", "preaching", "biblical-content", "study-materials"]

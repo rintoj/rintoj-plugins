@@ -218,7 +218,6 @@ Transform Figma designs into production-ready screens with token compliance and 
 
 - **Claude Figma MCP** - WebSocket server for Figma connection
 - **Figma Plugin** - Claude MCP Plugin installed in Figma
-- **Lucide Icons MCP** (optional) - For icon insertion
 
 #### Learn More
 

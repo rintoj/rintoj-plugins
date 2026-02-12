@@ -215,7 +215,7 @@ Transform Figma designs into production-ready screens with token compliance and 
 
 #### Requirements
 
-- **ClaudeTalkToFigma MCP** - WebSocket server for Figma connection
+- **Claude Figma MCP** - WebSocket server for Figma connection
 - **Figma Plugin** - Claude MCP Plugin installed in Figma
 - **Lucide Icons MCP** (optional) - For icon insertion
 

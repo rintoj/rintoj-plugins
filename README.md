@@ -131,7 +131,7 @@ Full documentation: [github.com/rintoj/planr](https://github.com/rintoj/planr)
 
 **Complete Figma design workflow from screen creation to developer handoff**
 
-Transform Figma designs into production-ready screens with token compliance and API specs.
+Transform Figma designs into production-ready screens with token compliance and bi-directional sync.
 
 ```
 /plugin install uix@rintoj-plugins
@@ -141,23 +141,24 @@ Transform Figma designs into production-ready screens with token compliance and 
 
 | Phase | Command | Result |
 |-------|---------|--------|
-| **Setup** | `/uix init` | Creates design system with tokens, typography, colors |
-| **Create** | `/uix create-screen` | Generates screen mocks from requirements |
-| **Validate** | `/uix validate-flow` | Checks flows, states, requirements coverage |
-| **Polish** | `/uix polish` | Transforms mocks to production quality |
-| **Tokenize** | `/uix audit-tokens` | Ensures 100% token compliance |
-| **Handoff** | `/uix to-api` | Generates GraphQL API specs |
+| **Setup** | `/uix:design` | Creates design system with tokens, typography, colors |
+| **Spec** | `/uix:spec` | Generates screen specs from feature definitions |
+| **Create** | `/uix:mock` | Creates screen mocks with inline token binding |
+| **Validate** | `/uix:check` | Checks flows, states, requirements coverage |
+| **Polish** | `/uix:polish` | Transforms mocks to production quality |
+| **Handoff** | `/uix:handoff` | Ensures 100% token compliance for developers |
 
 #### Key Features
 
-- **Screen Mocking** - Create Figma screens from text requirements
-- **Design Polish** - AI-powered refinement to production quality
+- **Screen Specs** - Generate detailed specs from feature definitions before creating screens
+- **Screen Mocking** - Create Figma screens with inline token binding and auto-positioning
+- **Design Polish** - AI-powered refinement to production quality with structure preservation
 - **Flow Validation** - Verify user flows and system state coverage
 - **Token Compliance** - Audit and auto-fix design token usage
-- **API Generation** - Generate GraphQL types, queries, mutations from designs
+- **Bi-directional Sync** - Sync screens and feature annotations between Figma and figma-map.md
 - **Design System Setup** - Create typography, colors, spacing systems
 - **Accessibility Checks** - Touch targets, contrast, text size validation
-- **Shadcn/UI Patterns** - Component composition following best practices
+- **Planr Integration** - Reads project-brief.md, feature definitions, and figma-map.md
 
 #### Workflow
 
@@ -166,17 +167,19 @@ Transform Figma designs into production-ready screens with token compliance and 
 │                    DESIGN WORKFLOW                          │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  /uix init           → Setup design system                  │
+│  /uix:connect  → Verify Figma connection                    │
 │        ↓                                                    │
-│  /uix create-screen  → Create screen mocks                  │
+│  /uix:design   → Setup design system                        │
 │        ↓                                                    │
-│  /uix validate-flow  → Check flows & states                 │
+│  /uix:spec     → Generate screen specs from features        │
 │        ↓                                                    │
-│  /uix polish         → Refine to production quality         │
+│  /uix:mock     → Create screen mocks                        │
 │        ↓                                                    │
-│  /uix audit-tokens   → Ensure token compliance              │
+│  /uix:check    → Check flows & states                       │
 │        ↓                                                    │
-│  /uix to-api         → Generate API specs                   │
+│  /uix:polish   → Refine to production quality               │
+│        ↓                                                    │
+│  /uix:handoff  → Ensure token compliance                    │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -184,34 +187,32 @@ Transform Figma designs into production-ready screens with token compliance and 
 #### Quick Start
 
 ```bash
-/uix help              # See all commands
-/uix init              # Setup design system
-/uix create-screen     # Create a screen mock
-/uix polish            # Polish selected screens
-/uix to-api <channel>  # Generate API specs
+/uix:help              # See all commands
+/uix:connect           # Verify Figma connection
+/uix:design            # Setup design system
+/uix:mock              # Create a screen mock
+/uix:polish            # Polish selected screens
 ```
 
 #### Commands Overview
 
 | Category | Commands |
 |----------|----------|
-| **Setup** | `/uix init`, `/uix create-tokens`, `/uix create-typography`, `/uix create-colors`, `/uix create-spacing` |
-| **Creation** | `/uix create-screen` |
-| **Validation** | `/uix validate-flow`, `/uix validate-design` |
-| **Polish** | `/uix polish` |
-| **Compliance** | `/uix audit-tokens` |
-| **Handoff** | `/uix to-api` |
-| **Help** | `/uix`, `/uix help` |
+| **Setup** | `/uix:connect`, `/uix:design`, `/uix:tokens` |
+| **Specs & Creation** | `/uix:spec`, `/uix:mock`, `/uix:polish` |
+| **Validation** | `/uix:check`, `/uix:audit`, `/uix:handoff` |
+| **Sync** | `/uix:sync`, `/uix:tag`, `/uix:arrange`, `/uix:components` |
+| **Help** | `/uix`, `/uix:help` |
 
 #### Agents
 
 | Agent | Purpose |
 |-------|---------|
+| **screen-spec-generator** | Generates screen specs from feature definitions |
 | **screen-mocker** | Creates screens from requirements |
 | **design-polisher** | Polishes designs to production quality |
 | **flow-validator** | Validates flows against requirements |
-| **design-token-auditor** | Audits and fixes token compliance |
-| **figma-to-api** | Generates GraphQL API specs |
+| **design-system-applier** | Audits and fixes token compliance |
 
 #### Requirements
 

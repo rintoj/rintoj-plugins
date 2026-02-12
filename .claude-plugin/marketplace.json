@@ -47,6 +47,20 @@
       },
       "category": "content",
       "keywords": ["bible", "worship", "scripture", "malayalam", "preaching", "biblical-content", "study-materials"]
+    },
+    {
+      "name": "design-cache",
+      "description": "Design knowledge base MCP server. Ingest UI designs from screenshots or web pages, analyze with Claude Vision, cache structured specs in PostgreSQL + pgvector, and search/retrieve cached designs when building UIs.",
+      "version": "0.1.0",
+      "author": {
+        "name": "rintoj"
+      },
+      "source": {
+        "source": "url",
+        "url": "git@github.com:rintoj/design-cache-mcp.git"
+      },
+      "category": "design",
+      "keywords": ["design-cache", "design-system", "ui-design", "screenshot-analysis", "design-specs", "mcp", "pgvector", "semantic-search", "design-tokens", "component-library", "claude-vision"]
     }
   ]
 }

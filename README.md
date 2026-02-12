@@ -226,6 +226,47 @@ Full documentation: [github.com/rintoj/uix-plugin](https://github.com/rintoj/uix
 
 ---
 
+### Design Cache
+
+**Design knowledge base with semantic search for UI screenshots and web pages**
+
+Ingest UI designs, analyze them with Claude Vision, and search/retrieve cached specs when building UIs.
+
+```
+/plugin install design-cache@rintoj-plugins
+```
+
+#### What It Does
+
+| Phase | Command | Result |
+|-------|---------|--------|
+| **Setup** | `/design-cache:setup` | Configure MCP server and database |
+| **Ingest** | `/design-cache:ingest` | Analyze a screenshot and cache its spec |
+| **Ingest URL** | `/design-cache:ingest-url` | Load a web page, detect sections, ingest each |
+| **Search** | `/design-cache:search` | Semantic search across cached designs |
+| **Retrieve** | `/design-cache:get` | Get full spec with tokens, components, HTML snippets |
+| **Browse** | `/design-cache:list` | List all cached designs |
+
+#### Key Features
+
+- **Claude Vision Analysis** - Extracts layout, components, tokens, and HTML snippets from screenshots
+- **Semantic Search** - Find designs by natural language description using pgvector embeddings
+- **Web Page Ingestion** - Puppeteer-based section detection and individual screenshots
+- **Structured Specs** - Design tokens, component styles, Tailwind snippets, responsive notes
+- **MCP Integration** - Tools available directly to Claude Code for design-informed UI building
+
+#### Requirements
+
+- **Docker** - For PostgreSQL + pgvector
+- **Anthropic API Key** - For Claude Vision analysis
+- **Embedding API Key** - Voyage AI (recommended), OpenAI, or local fallback
+
+#### Learn More
+
+Full documentation: [github.com/rintoj/design-cache-mcp](https://github.com/rintoj/design-cache-mcp)
+
+---
+
 ## Contributing
 
 Have a plugin idea? Open an issue at [github.com/rintoj/rintoj-plugins](https://github.com/rintoj/rintoj-plugins).

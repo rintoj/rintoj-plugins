@@ -23,7 +23,7 @@
     {
       "name": "designr",
       "description": "Complete Figma design workflow from screen creation to developer handoff. Includes screen mocking, flow validation, design polish, token compliance, bi-directional Figma sync, and Planr integration.",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "author": {
         "name": "rintoj"
       },

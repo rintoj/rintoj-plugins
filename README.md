@@ -141,22 +141,21 @@ Transform Figma designs into production-ready screens with token compliance and 
 
 | Phase | Command | Result |
 |-------|---------|--------|
-| **Setup** | `/designr:design` | Creates design system with tokens, typography, colors |
+| **Setup** | `/designr:design-system` | Sync design system (tokens, typography, colors, spacing) |
 | **Spec** | `/designr:spec` | Generates screen specs from feature definitions |
-| **Create** | `/designr:mock` | Creates screen mocks with inline token binding |
+| **Create** | `/designr:create` | Creates 3 design variants with inline token binding |
 | **Validate** | `/designr:check` | Checks flows, states, requirements coverage |
-| **Polish** | `/designr:polish` | Transforms mocks to production quality |
-| **Handoff** | `/designr:handoff` | Ensures 100% token compliance for developers |
+| **Polish** | `/designr:polish` | Full pipeline: visual polish + token binding + compliance |
+| **Sync** | `/designr:sync` | Bi-directional Figma ↔ figma-map.md sync |
 
 #### Key Features
 
-- **Screen Specs** - Generate detailed specs from feature definitions before creating screens
-- **Screen Mocking** - Create Figma screens with inline token binding and auto-positioning
-- **Design Polish** - AI-powered refinement to production quality with structure preservation
+- **3-Variant Screen Creation** - Every screen created in 3 variants (consistency, layout variation, visual variation)
+- **Auto Spec Generation** - Specs generated automatically when none exist
+- **Design Polish Pipeline** - Visual polish + token binding + compliance report in one command
 - **Flow Validation** - Verify user flows and system state coverage
-- **Token Compliance** - Audit and auto-fix design token usage
 - **Bi-directional Sync** - Sync screens and feature annotations between Figma and figma-map.md
-- **Design System Setup** - Create typography, colors, spacing systems
+- **Design System Setup** - Create and reconcile typography, colors, spacing systems
 - **Accessibility Checks** - Touch targets, contrast, text size validation
 - **Planr Integration** - Reads project-brief.md, feature definitions, and figma-map.md
 
@@ -167,19 +166,17 @@ Transform Figma designs into production-ready screens with token compliance and 
 │                    DESIGN WORKFLOW                          │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  /designr:connect  → Verify Figma connection                │
+│  /designr:connect        → Verify Figma connection          │
 │        ↓                                                    │
-│  /designr:design   → Setup design system                    │
+│  /designr:design-system  → Sync design system tokens        │
 │        ↓                                                    │
-│  /designr:spec     → Generate screen specs from features    │
+│  /designr:create         → Create screens (3 variants)      │
 │        ↓                                                    │
-│  /designr:mock     → Create screen mocks                    │
+│  /designr:sync           → Bi-directional sync              │
 │        ↓                                                    │
-│  /designr:check    → Check flows & states                   │
+│  /designr:check          → Validate flows & states          │
 │        ↓                                                    │
-│  /designr:polish   → Refine to production quality           │
-│        ↓                                                    │
-│  /designr:handoff  → Ensure token compliance                │
+│  /designr:polish         → Polish + tokens + compliance     │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -187,32 +184,33 @@ Transform Figma designs into production-ready screens with token compliance and 
 #### Quick Start
 
 ```bash
-/designr:help              # See all commands
+/designr                   # See all commands and workflow
 /designr:connect           # Verify Figma connection
-/designr:design            # Setup design system
-/designr:mock              # Create a screen mock
-/designr:polish            # Polish selected screens
+/designr:design-system     # Setup design system
+/designr:create            # Create screens with 3 variants
+/designr:polish            # Full polish pipeline
 ```
 
-#### Commands Overview
+#### Commands Overview (10)
 
 | Category | Commands |
 |----------|----------|
-| **Setup** | `/designr:connect`, `/designr:design`, `/designr:tokens` |
-| **Specs & Creation** | `/designr:spec`, `/designr:mock`, `/designr:polish` |
-| **Validation** | `/designr:check`, `/designr:audit`, `/designr:handoff` |
-| **Sync** | `/designr:sync`, `/designr:tag`, `/designr:arrange`, `/designr:components` |
-| **Help** | `/designr`, `/designr:help` |
+| **Setup** | `/designr:connect`, `/designr:design-system` |
+| **Specs & Creation** | `/designr:spec`, `/designr:create` |
+| **Sync & Validation** | `/designr:sync`, `/designr:check` |
+| **Polish & Handoff** | `/designr:polish` |
+| **Utilities** | `/designr:arrange`, `/designr:components`, `/designr` |
 
 #### Agents
 
 | Agent | Purpose |
 |-------|---------|
 | **screen-spec-generator** | Generates screen specs from feature definitions |
-| **screen-mocker** | Creates screens from requirements |
+| **screen-mocker** | Creates screens from requirements (supports 3 variants) |
 | **design-polisher** | Polishes designs to production quality |
 | **flow-validator** | Validates flows against requirements |
 | **design-system-applier** | Audits and fixes token compliance |
+| **design-replicator** | Replicates design screenshots into Figma |
 
 #### Requirements
 

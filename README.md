@@ -127,26 +127,26 @@ Full documentation: [github.com/rintoj/planr](https://github.com/rintoj/planr)
 
 ---
 
-### UIX
+### Designr
 
 **Complete Figma design workflow from screen creation to developer handoff**
 
 Transform Figma designs into production-ready screens with token compliance and bi-directional sync.
 
 ```
-/plugin install uix@rintoj-plugins
+/plugin install designr@rintoj-plugins
 ```
 
 #### What It Does
 
 | Phase | Command | Result |
 |-------|---------|--------|
-| **Setup** | `/uix:design` | Creates design system with tokens, typography, colors |
-| **Spec** | `/uix:spec` | Generates screen specs from feature definitions |
-| **Create** | `/uix:mock` | Creates screen mocks with inline token binding |
-| **Validate** | `/uix:check` | Checks flows, states, requirements coverage |
-| **Polish** | `/uix:polish` | Transforms mocks to production quality |
-| **Handoff** | `/uix:handoff` | Ensures 100% token compliance for developers |
+| **Setup** | `/designr:design` | Creates design system with tokens, typography, colors |
+| **Spec** | `/designr:spec` | Generates screen specs from feature definitions |
+| **Create** | `/designr:mock` | Creates screen mocks with inline token binding |
+| **Validate** | `/designr:check` | Checks flows, states, requirements coverage |
+| **Polish** | `/designr:polish` | Transforms mocks to production quality |
+| **Handoff** | `/designr:handoff` | Ensures 100% token compliance for developers |
 
 #### Key Features
 
@@ -167,19 +167,19 @@ Transform Figma designs into production-ready screens with token compliance and 
 │                    DESIGN WORKFLOW                          │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  /uix:connect  → Verify Figma connection                    │
+│  /designr:connect  → Verify Figma connection                │
 │        ↓                                                    │
-│  /uix:design   → Setup design system                        │
+│  /designr:design   → Setup design system                    │
 │        ↓                                                    │
-│  /uix:spec     → Generate screen specs from features        │
+│  /designr:spec     → Generate screen specs from features    │
 │        ↓                                                    │
-│  /uix:mock     → Create screen mocks                        │
+│  /designr:mock     → Create screen mocks                    │
 │        ↓                                                    │
-│  /uix:check    → Check flows & states                       │
+│  /designr:check    → Check flows & states                   │
 │        ↓                                                    │
-│  /uix:polish   → Refine to production quality               │
+│  /designr:polish   → Refine to production quality           │
 │        ↓                                                    │
-│  /uix:handoff  → Ensure token compliance                    │
+│  /designr:handoff  → Ensure token compliance                │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -187,22 +187,22 @@ Transform Figma designs into production-ready screens with token compliance and 
 #### Quick Start
 
 ```bash
-/uix:help              # See all commands
-/uix:connect           # Verify Figma connection
-/uix:design            # Setup design system
-/uix:mock              # Create a screen mock
-/uix:polish            # Polish selected screens
+/designr:help              # See all commands
+/designr:connect           # Verify Figma connection
+/designr:design            # Setup design system
+/designr:mock              # Create a screen mock
+/designr:polish            # Polish selected screens
 ```
 
 #### Commands Overview
 
 | Category | Commands |
 |----------|----------|
-| **Setup** | `/uix:connect`, `/uix:design`, `/uix:tokens` |
-| **Specs & Creation** | `/uix:spec`, `/uix:mock`, `/uix:polish` |
-| **Validation** | `/uix:check`, `/uix:audit`, `/uix:handoff` |
-| **Sync** | `/uix:sync`, `/uix:tag`, `/uix:arrange`, `/uix:components` |
-| **Help** | `/uix`, `/uix:help` |
+| **Setup** | `/designr:connect`, `/designr:design`, `/designr:tokens` |
+| **Specs & Creation** | `/designr:spec`, `/designr:mock`, `/designr:polish` |
+| **Validation** | `/designr:check`, `/designr:audit`, `/designr:handoff` |
+| **Sync** | `/designr:sync`, `/designr:tag`, `/designr:arrange`, `/designr:components` |
+| **Help** | `/designr`, `/designr:help` |
 
 #### Agents
 
@@ -221,7 +221,7 @@ Transform Figma designs into production-ready screens with token compliance and 
 
 #### Learn More
 
-Full documentation: [github.com/rintoj/uix-plugin](https://github.com/rintoj/uix-plugin)
+Full documentation: [github.com/rintoj/designr](https://github.com/rintoj/designr)
 
 ---
 

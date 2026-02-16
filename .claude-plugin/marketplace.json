@@ -22,8 +22,8 @@
     },
     {
       "name": "designr",
-      "description": "Complete Figma design workflow from screen creation to developer handoff. Includes screen mocking, flow validation, design polish, token compliance, bi-directional Figma sync, and Planr integration.",
-      "version": "2.1.0",
+      "description": "Complete Figma design workflow from screen creation to developer handoff. Includes 3-variant screen creation, flow validation, design polish pipeline, token compliance, bi-directional Figma sync, and Planr integration.",
+      "version": "4.0.0",
       "author": {
         "name": "rintoj"
       },
@@ -32,7 +32,7 @@
         "url": "git@github.com:rintoj/designr.git"
       },
       "category": "design",
-      "keywords": ["figma", "design-system", "ui-design", "ux", "design-tokens", "screen-specs", "screen-mocking", "design-validation", "figma-sync", "component-inventory", "developer-handoff", "planr-integration"]
+      "keywords": ["figma", "design-system", "ui-design", "ux", "design-tokens", "spec-generator", "screen-creator", "design-validation", "figma-sync", "component-inventory", "developer-handoff", "planr-integration"]
     },
     {
       "name": "bible-scribe",

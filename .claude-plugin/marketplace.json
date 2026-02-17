@@ -23,7 +23,7 @@
     {
       "name": "designr",
       "description": "Complete Figma design workflow from screen creation to developer handoff. Includes 3-variant screen creation, flow validation, design polish pipeline, token compliance, bi-directional Figma sync, design replication (two-stage: extract + build), and Planr integration.",
-      "version": "4.2.2",
+      "version": "4.3.0",
       "author": {
         "name": "rintoj"
       },

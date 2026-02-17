@@ -48,7 +48,7 @@ Transform how you manage software projects - from capturing an idea to deploying
 - **Interactive Project Capture** - Guided Q&A builds comprehensive project briefs
 - **Autonomous Planning** - AI generates architecture docs, ADRs, and task breakdowns
 - **Feature-Based Vertical Slices** - Each sprint delivers a complete, testable feature
-- **10 Specialized Agents** - Planning, implementation, review, testing, docs, research
+- **14 Specialized Agents** - Planning, implementation, review (4 focused sub-agents), testing, docs, research
 - **Parallel Execution** - Independent tasks run simultaneously for faster builds
 - **GitHub Integration** - Milestones, Issues, Project Boards, PRs auto-managed
 - **Quality Gates** - Lint, build, test checks before every merge
@@ -109,7 +109,11 @@ Transform how you manage software projects - from capturing an idea to deploying
 | **task-agent** | Single task implementation |
 | **milestone-agent** | Sprint orchestration with parallel execution |
 | **project-agent** | Full project implementation |
-| **review-agent** | Code review with auto-fix |
+| **review-orchestrator-agent** | Orchestrates focused review sub-agents |
+| **review-code-agent** | Code quality & correctness review |
+| **review-security-agent** | Security vulnerability review |
+| **review-perf-agent** | Performance & best practices review |
+| **review-design-agent** | Design compliance review (UI only) |
 | **test-agent** | Test generation and fixing |
 | **docs-agent** | Documentation generation |
 | **research-agent** | Technical research and POCs |

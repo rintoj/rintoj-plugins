@@ -133,7 +133,7 @@ Full documentation: [github.com/rintoj/planr](https://github.com/rintoj/planr)
 
 ### Designr
 
-**Complete Figma design workflow: setup, sketch, create, replicate, review, polish, sync, components**
+**Complete Figma design workflow: setup, sketch, design, replicate, review, polish, sync, components**
 
 Transform Figma designs into production-ready screens with token compliance and bi-directional sync.
 
@@ -147,7 +147,7 @@ Transform Figma designs into production-ready screens with token compliance and 
 |-------|---------|--------|
 | **Setup** | `/designr:setup` | Verify Figma connection & sync design system |
 | **Sketch** | `/designr:sketch` | Generate screen specs from features |
-| **Create** | `/designr:create` | Create screens (3 variants) with token binding |
+| **Design** | `/designr:design` | Create screens (3 variants) with token binding |
 | **Replicate** | `/designr:replicate` | Replicate design screenshots into Figma |
 | **Review** | `/designr:review` | Validate flows, states, requirements coverage |
 | **Polish** | `/designr:polish` | Full pipeline: visual polish + token binding + audit |
@@ -175,7 +175,7 @@ Transform Figma designs into production-ready screens with token compliance and 
 │  /designr:setup          → Verify connection + sync tokens   │
 │        ↓                                                     │
 │  /designr:sketch         → Generate screen specs             │
-│        ├─ Create new screens: /designr:create               │
+│        ├─ Design new screens: /designr:design               │
 │        └─ Replicate screenshots: /designr:replicate         │
 │        ↓                                                     │
 │  /designr:sync           → Bi-directional sync               │
@@ -193,7 +193,7 @@ Transform Figma designs into production-ready screens with token compliance and 
 /designr                   # See all commands and workflow
 /designr:setup             # Verify Figma and sync design system
 /designr:sketch            # Generate screen specs
-/designr:create            # Create screens with 3 variants
+/designr:design            # Design screens with 3 variants
 /designr:polish            # Full polish pipeline
 ```
 
@@ -202,7 +202,7 @@ Transform Figma designs into production-ready screens with token compliance and 
 | Category | Commands |
 |----------|----------|
 | **Setup & Sketch** | `/designr:setup`, `/designr:sketch` |
-| **Creation & Replication** | `/designr:create`, `/designr:replicate` |
+| **Design & Replication** | `/designr:design`, `/designr:replicate` |
 | **Review & Polish** | `/designr:review`, `/designr:polish` |
 | **Sync & Utilities** | `/designr:sync`, `/designr:components`, `/designr` |
 

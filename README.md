@@ -133,9 +133,9 @@ Full documentation: [github.com/rintoj/planr](https://github.com/rintoj/planr)
 
 ### Designr
 
-**Complete Figma design workflow: setup, sketch, design, replicate, review, polish, sync, components**
+**Figma design workflow: setup, screen creation with auto-validation loop, and design validation**
 
-Transform Figma designs into production-ready screens with token compliance and bi-directional sync.
+Create production-quality screens with Design Thinking — automatically validated and iterated against your design system.
 
 ```
 /plugin install designr@rintoj-plugins
@@ -145,44 +145,31 @@ Transform Figma designs into production-ready screens with token compliance and 
 
 | Phase | Command | Result |
 |-------|---------|--------|
-| **Setup** | `/designr:setup` | Verify Figma connection & sync design system |
-| **Sketch** | `/designr:sketch` | Generate screen specs from features |
-| **Design** | `/designr:design` | Create screens (3 variants) with token binding |
-| **Replicate** | `/designr:replicate` | Replicate design screenshots into Figma |
-| **Review** | `/designr:review` | Validate flows, states, requirements coverage |
-| **Polish** | `/designr:polish` | Full pipeline: visual polish + token binding + audit |
-| **Sync** | `/designr:sync` | Bi-directional Figma ↔ figma-map.md sync |
+| **Setup** | `/designr:setup` | First run: create design system; repeat runs: diff + reconcile |
+| **Design** | `/designr:design` | Design a screen with auto-validate loop (up to 3 fix iterations) |
+| **Validate** | `/designr:validate` | Validate the selected screen against design system standards |
 
 #### Key Features
 
-- **3-Variant Screen Creation** - Every screen created in 3 variants (consistency, layout variation, visual variation)
-- **Design Derivation** - Extend existing screens with `--extend` flag to create variants
-- **Design Replication** - Convert screenshots into editable Figma layouts with full color/layout extraction
-- **Polish Pipeline** - 3-phase: visual polish → token mapping → compliance audit
-- **Design System Sync** - Create and reconcile typography, colors, spacing tokens
-- **Token Compliance** - Auto-bind design tokens and generate compliance reports
-- **Flow Validation** - Verify user flows and system state coverage
-- **Bi-directional Sync** - Sync screens and feature annotations between Figma and figma-map.md
-- **Planr Integration** - Reads project-brief.md, feature definitions, and figma-map.md
+- **Design Thinking** — 7-phase workflow: canvas study → aesthetic direction → content plan → build → fixups → verify → report
+- **Auto-Validation Loop** — Screen is validated and redesigned if issues are found (up to 3 iterations)
+- **Design System Setup** — Create and reconcile typography, colors, spacing, and radius tokens
+- **Token Compliance** — Verifies all visual properties are bound to design system tokens
+- **Standalone Validation** — Validate any screen with a screenshot + structural + token spot-check
+- **Design Cohesion** — Analyzes existing screens and matches their aesthetic direction
 
 #### Workflow
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│                   DESIGN WORKFLOW (v4.0.0)                   │
+│                    DESIGN WORKFLOW                           │
 ├──────────────────────────────────────────────────────────────┤
 │                                                              │
-│  /designr:setup          → Verify connection + sync tokens   │
+│  /designr:setup     → Connect Figma + sync tokens            │
 │        ↓                                                     │
-│  /designr:sketch         → Generate screen specs             │
-│        ├─ Design new screens: /designr:design               │
-│        └─ Replicate screenshots: /designr:replicate         │
+│  /designr:design    → Design screen + auto-validate          │
 │        ↓                                                     │
-│  /designr:sync           → Bi-directional sync               │
-│        ↓                                                     │
-│  /designr:review         → Validate flows & states           │
-│        ↓                                                     │
-│  /designr:polish         → Polish + tokens + compliance      │
+│  /designr:validate  → Spot-check any screen                  │
 │                                                              │
 └──────────────────────────────────────────────────────────────┘
 ```
@@ -190,42 +177,37 @@ Transform Figma designs into production-ready screens with token compliance and 
 #### Quick Start
 
 ```bash
-/designr                   # See all commands and workflow
-/designr:setup             # Verify Figma and sync design system
-/designr:sketch            # Generate screen specs
-/designr:design            # Design screens with 3 variants
-/designr:polish            # Full polish pipeline
+/designr:setup             # Connect Figma and sync design system (first run or re-sync)
+/designr:design            # Design a screen with iterative validation
+/designr:validate          # Validate the selected screen
 ```
 
-#### Commands Overview (9)
+#### Commands (3)
 
-| Category | Commands |
-|----------|----------|
-| **Setup & Sketch** | `/designr:setup`, `/designr:sketch` |
-| **Design & Replication** | `/designr:design`, `/designr:replicate` |
-| **Review & Polish** | `/designr:review`, `/designr:polish` |
-| **Sync & Utilities** | `/designr:sync`, `/designr:components`, `/designr` |
+| Command | Description |
+|---------|-------------|
+| `/designr:setup` | First run: create design system from scratch; repeat: diff + fix tokens |
+| `/designr:design` | Design a screen with iterative validation (up to 3 fix iterations) |
+| `/designr:validate` | Validate the selected Figma screen against design system standards |
 
-#### Agents (11)
+#### Agents (2)
 
 | Agent | Purpose |
 |-------|---------|
-| **screen-sketcher** | Generates screen specs from feature definitions |
-| **screen-creator** | Creates screens from requirements (supports 3 variants) |
-| **screen-deriver** | Derives new screens from existing selections with --extend |
-| **design-replicator** | Replicates design screenshots into editable Figma layouts |
-| **design-validator** | Validates flows and system state coverage |
-| **design-polisher** | Polishes designs to production quality |
-| **design-mapper** | Maps and binds design tokens to components |
-| **design-auditor** | Audits token compliance and generates reports |
-| **token-reconciler** | Sets up and reconciles design system tokens |
-| **token-catalog-builder** | Builds token catalogs from design systems (utility) |
-| **doc-discoverer** | Discovers and parses project documentation (utility) |
+| **screen-designer** | Creates distinctive Figma screens using Design Thinking (7-phase workflow) |
+| **screen-validator** | Validates screens against design system; returns PASS or ISSUES_FOUND |
+
+#### Skills (2)
+
+| Skill | Purpose |
+|-------|---------|
+| **design-system** | Connect, diff, and reconcile Figma design system tokens against canonical file |
+| **design-rules** | Universal design enforcement rules: token binding, auto-layout, typography, shadows, icons, accessibility |
 
 #### Requirements
 
-- **Claude Figma MCP** - WebSocket server for Figma connection
-- **Figma Plugin** - Claude MCP Plugin installed in Figma
+- **Claude Figma MCP** — WebSocket server running (`bun socket`)
+- **Figma Plugin** — Claude MCP Plugin open in Figma
 
 #### Learn More
 

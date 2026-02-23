@@ -23,7 +23,7 @@
     {
       "name": "designr",
       "description": "Figma design workflow: design system setup, screen creation with auto-validation loop, and design validation.",
-      "version": "5.3.2",
+      "version": "5.4.0",
       "author": {
         "name": "rintoj"
       },

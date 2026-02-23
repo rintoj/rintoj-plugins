@@ -22,8 +22,8 @@
     },
     {
       "name": "designr",
-      "description": "Figma design workflow: design system setup, screen creation with auto-validation loop. Creates 3 design variants (Bold Minimal, Layered Rich, Dynamic Composition), validates each against the design system, and iterates up to 3 times until all variants pass quality checks.",
-      "version": "4.6.0",
+      "description": "Figma design workflow: design system setup, screen creation with auto-validation loop, and design validation.",
+      "version": "5.0.1",
       "author": {
         "name": "rintoj"
       },
@@ -32,7 +32,7 @@
         "url": "git@github.com:rintoj/designr.git"
       },
       "category": "design",
-      "keywords": ["figma", "design-system", "ui-design", "ux", "design-tokens", "spec-generator", "screen-creator", "design-validation", "figma-sync", "component-inventory", "developer-handoff", "planr-integration"]
+      "keywords": ["figma", "design-system", "ui-design", "design-tokens", "screen-designer", "design-validation", "design-thinking", "token-compliance"]
     },
     {
       "name": "bible-scribe",

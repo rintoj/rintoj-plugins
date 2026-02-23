@@ -22,8 +22,8 @@
     },
     {
       "name": "designr",
-      "description": "Complete Figma design workflow from screen creation to developer handoff. Includes 3-variant screen creation, flow validation, design polish pipeline, token compliance, bi-directional Figma sync, design replication (two-stage: extract + build), and Planr integration.",
-      "version": "4.5.1",
+      "description": "Figma design workflow: design system setup, screen creation with auto-validation loop. Creates 3 design variants (Bold Minimal, Layered Rich, Dynamic Composition), validates each against the design system, and iterates up to 3 times until all variants pass quality checks.",
+      "version": "4.6.0",
       "author": {
         "name": "rintoj"
       },

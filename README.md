@@ -148,6 +148,7 @@ Create production-quality screens with Design Thinking — automatically validat
 | **Setup** | `/designr:setup` | First run: create design system; repeat runs: diff + reconcile |
 | **Design** | `/designr:design` | Design a screen with auto-validate loop (up to 3 fix iterations) |
 | **Validate** | `/designr:validate` | Validate the selected screen against design system standards |
+| **Lint** | `/designr:lint` | Lint a frame and report all issues (no auto-fix) |
 
 #### Key Features
 
@@ -169,6 +170,8 @@ Create production-quality screens with Design Thinking — automatically validat
 │        ↓                                                     │
 │  /designr:design    → Design screen + auto-validate          │
 │        ↓                                                     │
+│  /designr:lint      → Quick lint report (no fix)               │
+│        ↓                                                     │
 │  /designr:validate  → Spot-check any screen                  │
 │                                                              │
 └──────────────────────────────────────────────────────────────┘
@@ -182,12 +185,13 @@ Create production-quality screens with Design Thinking — automatically validat
 /designr:validate          # Validate the selected screen
 ```
 
-#### Commands (3)
+#### Commands (4)
 
 | Command | Description |
 |---------|-------------|
 | `/designr:setup` | First run: create design system from scratch; repeat: diff + fix tokens |
 | `/designr:design` | Design a screen with iterative validation (up to 3 fix iterations) |
+| `/designr:lint` | Lint the selected frame and report all issues (no auto-fix) |
 | `/designr:validate` | Validate the selected Figma screen against design system standards |
 
 #### Agents (2)

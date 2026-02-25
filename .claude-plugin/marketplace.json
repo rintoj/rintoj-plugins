@@ -18,12 +18,35 @@
         "url": "git@github.com:rintoj/planr.git"
       },
       "category": "productivity",
-      "keywords": ["project-management", "github", "planning", "implementation", "agile", "backlog", "issue-tracking", "feature-generation", "vertical-slices", "dashboard", "figma", "design-system", "design-tokens", "ui-implementation", "nestjs", "backend", "api", "cli", "database", "graphql", "nextjs", "react"]
+      "keywords": [
+        "project-management",
+        "github",
+        "planning",
+        "implementation",
+        "agile",
+        "backlog",
+        "issue-tracking",
+        "feature-generation",
+        "vertical-slices",
+        "dashboard",
+        "figma",
+        "design-system",
+        "design-tokens",
+        "ui-implementation",
+        "nestjs",
+        "backend",
+        "api",
+        "cli",
+        "database",
+        "graphql",
+        "nextjs",
+        "react"
+      ]
     },
     {
       "name": "designr",
       "description": "Figma design workflow: design system setup, screen design, validation, and linting.",
-      "version": "5.6.0",
+      "version": "5.6.1",
       "author": {
         "name": "rintoj"
       },
@@ -32,7 +55,16 @@
         "url": "git@github.com:rintoj/designr.git"
       },
       "category": "design",
-      "keywords": ["figma", "design-system", "ui-design", "design-tokens", "screen-designer", "design-validation", "design-thinking", "token-compliance"]
+      "keywords": [
+        "figma",
+        "design-system",
+        "ui-design",
+        "design-tokens",
+        "screen-designer",
+        "design-validation",
+        "design-thinking",
+        "token-compliance"
+      ]
     },
     {
       "name": "bible-scribe",
@@ -46,7 +78,15 @@
         "url": "git@github.com:rintoj/bible-scribe.git"
       },
       "category": "content",
-      "keywords": ["bible", "worship", "scripture", "malayalam", "preaching", "biblical-content", "study-materials"]
+      "keywords": [
+        "bible",
+        "worship",
+        "scripture",
+        "malayalam",
+        "preaching",
+        "biblical-content",
+        "study-materials"
+      ]
     },
     {
       "name": "design-cache",
@@ -60,7 +100,19 @@
         "url": "git@github.com:rintoj/design-cache-mcp.git"
       },
       "category": "design",
-      "keywords": ["design-cache", "design-system", "ui-design", "screenshot-analysis", "design-specs", "mcp", "pgvector", "semantic-search", "design-tokens", "component-library", "claude-vision"]
+      "keywords": [
+        "design-cache",
+        "design-system",
+        "ui-design",
+        "screenshot-analysis",
+        "design-specs",
+        "mcp",
+        "pgvector",
+        "semantic-search",
+        "design-tokens",
+        "component-library",
+        "claude-vision"
+      ]
     }
   ]
 }

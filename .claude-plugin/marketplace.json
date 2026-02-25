@@ -23,7 +23,7 @@
     {
       "name": "designr",
       "description": "Figma design workflow: design system setup, screen design, validation, and linting.",
-      "version": "5.5.0",
+      "version": "5.6.0",
       "author": {
         "name": "rintoj"
       },

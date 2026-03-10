@@ -131,7 +131,7 @@ Full documentation: [github.com/rintoj/planr](https://github.com/rintoj/planr)
 
 ---
 
-### Designr v5.8.0
+### Designr v5.9.1
 
 **Figma design workflow: setup, screen creation with auto-validation loop, and design validation**
 
